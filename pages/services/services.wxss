@@ -1,0 +1,15 @@
+.page {
+  padding-top: 80px;
+}
+
+.page > .list-item {
+  width: auto;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.page > .list-item .list-info,
+.page > .list-item .list-title,
+.page > .list-item .list-sub {
+  text-align: left;
+}

@@ -1,0 +1,216 @@
+.profile-header {
+  position: relative;
+  padding: 36px 16px 24px;
+  overflow: hidden;
+  border-radius: 0 0 28px 28px;
+  background:
+    repeating-linear-gradient(26deg, transparent 0 36px, rgba(245,226,201,0.035) 36px 37px),
+    linear-gradient(160deg, #5D3A1A, #3E2614, #2A170B);
+}
+
+.profile-header::before {
+  content: "";
+  position: absolute;
+  top: -46px;
+  right: -32px;
+  width: 142px;
+  height: 142px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(169,101,50,0.12), transparent 70%);
+}
+
+.profile-header::after {
+  content: "";
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+}
+
+.profile-main {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  margin-right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgba(214,190,160,0.32);
+  border-radius: 50%;
+  background: #8B552E;
+  color: #FFF8EE;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.name {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.level-badge {
+  display: inline-flex;
+  margin-top: 8px;
+  padding: 4px 14px;
+  border-radius: 12px;
+  background: #8B552E;
+  color: #FFF8EE;
+  font-size: 12px;
+}
+
+.member-welcome {
+  position: relative;
+  z-index: 2;
+  margin: -24px 12px 8px;
+  padding: 20px 16px;
+  border-radius: 16px;
+  border: 1px solid #E6D9C8;
+  background: #FFFDF9;
+  box-shadow: 0 6px 18px rgba(64,39,20,0.08);
+}
+
+.welcome-header {
+  display: flex;
+  align-items: center;
+}
+
+.welcome-icon {
+  width: 44px;
+  height: 44px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #8B552E, #5D3A1A);
+}
+
+.welcome-text {
+  flex: 1;
+}
+
+.welcome-title {
+  color: #2E2A26;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.welcome-sub {
+  margin-top: 4px;
+  color: #8A7D70;
+  font-size: 12px;
+}
+
+.welcome-tag {
+  padding: 4px 10px;
+  border-radius: 10px;
+  background: #E6D6C2;
+  color: #6B4325;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.welcome-benefits {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: #5F5750;
+  font-size: 12px;
+}
+
+.welcome-benefits view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-benefits text {
+  margin-top: 6px;
+}
+
+.tier-strip {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.tier-item {
+  position: relative;
+  flex: 1;
+  min-height: 128px;
+  margin: 0 4px;
+  padding: 14px 8px 12px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  border-color: #E6D9C8;
+  background: #FFFDF9;
+  text-align: center;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.tier-item.current {
+  border-color: #A96532;
+  z-index: 2;
+  transform: scale(1.06);
+  box-shadow: 0 8px 18px rgba(64,39,20,0.12);
+}
+
+.corner {
+  position: absolute;
+  top: 8px;
+  right: -22px;
+  width: 72px;
+  padding: 2px 0;
+  transform: rotate(45deg);
+  background: #8B552E;
+  color: #FFF8EE;
+  font-size: 10px;
+}
+
+.tier-title {
+  margin-top: 8px;
+  color: #2E2A26;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.tier-cond {
+  margin-top: 6px;
+  min-height: 30px;
+  color: #8A7D70;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.tier-tag {
+  margin-top: 5px;
+  color: #8B552E;
+  font-size: 11px;
+}
+
+.shop-title {
+  color: #6B4325;
+}
+
+.page > .list-item {
+  width: auto;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.page > .list-item .list-info,
+.page > .list-item .list-title,
+.page > .list-item .list-sub {
+  text-align: left;
+}

@@ -1,0 +1,49 @@
+<view class="page">
+  <view class="custom-nav">
+    <view class="nav-inner">
+      <text>品牌</text>
+    </view>
+  </view>
+
+  <view class="brand-story">
+    <view class="brand-cover">
+      <view class="brand-word">BROUNVANM</view>
+      <view class="brand-tagline">Craft · Trust · Connection</view>
+    </view>
+    <view class="brand-body">
+      <view class="brand-title">不止是一双鞋</view>
+      <view class="brand-text">Brounvanm 相信，一双好鞋承载的不仅是步履，更是态度。从皮革选材到缝线收边，每一处细节都在讲述工艺的执着。我们做的不是卖鞋生意，而是为你打造一个可信赖的品牌服务入口——验真、养护、陪伴、成长。</view>
+    </view>
+  </view>
+
+  <view class="section-title">
+    <view class="section-title-main">穿搭灵感</view>
+  </view>
+  <view class="card-row inspiration-row">
+    <view class="content-card" bindtap="goDetail" data-key="formalOutfit">
+      <view class="content-cover"><brand-icon name="shirt" color="#8B552E" size="{{48}}" /></view>
+      <view class="content-body">
+        <view class="content-tag">穿搭</view>
+        <view class="content-title">商务正装×牛津鞋</view>
+        <view class="content-meta">3套搭配方案</view>
+      </view>
+    </view>
+    <view class="content-card" bindtap="goDetail" data-key="casualOutfit">
+      <view class="content-cover cover-two"><brand-icon name="shirt" color="#8B552E" size="{{48}}" /></view>
+      <view class="content-body">
+        <view class="content-tag">穿搭</view>
+        <view class="content-title">Smart Casual 乐福鞋搭配</view>
+        <view class="content-meta">周末出行灵感</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="section-title">
+    <view class="section-title-main">关注我们</view>
+  </view>
+  <view class="benefit-row">
+    <button class="benefit-item" bindtap="wechatToast"><brand-icon name="wechat" color="#5D3A1A" size="{{26}}" /><view class="title">公众号</view><view class="sub">品牌动态·保养知识</view></button>
+    <button class="benefit-item" bindtap="videoToast"><brand-icon name="video" color="#5D3A1A" size="{{26}}" /><view class="title">视频号</view><view class="sub">穿搭·工艺·活动</view></button>
+    <button class="benefit-item" bindtap="favToast"><brand-icon name="bookmark" color="#5D3A1A" size="{{26}}" /><view class="title">收藏我们</view><view class="sub">方便下次访问</view></button>
+  </view>
+</view>

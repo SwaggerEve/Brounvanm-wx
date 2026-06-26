@@ -1,0 +1,28 @@
+<view class="page">
+  <view class="custom-nav">
+    <view class="nav-inner">
+      <button class="nav-back" bindtap="backHome"><brand-icon name="chevron-left" color="#5D3A1A" size="{{24}}" /></button>
+      <text>添加专属客服</text>
+    </view>
+  </view>
+
+  <view class="banner-tip">
+    <brand-icon name="info" color="#8B6914" size="{{20}}" />
+    <text>添加专属客服后，即可解锁全部会员权益</text>
+  </view>
+
+  <view class="qr-card">
+    <view class="qr-placeholder"><brand-icon name="nfc" color="#8B552E" size="{{32}}" /></view>
+    <view class="qr-title">添加 Brounvanm 专属顾问</view>
+    <view class="desc">
+      <view>长按识别二维码，添加企业微信好友</view>
+      <view>领取你的专属品牌服务</view>
+    </view>
+    <view class="tips">添加后你将获得：正品验证记录 · 专属顾问1对1 · 保养咨询服务 · 新品优先通知 · 会员专属福利</view>
+  </view>
+
+  <button class="btn-primary" bindtap="copyWechat">
+    <brand-icon name="copy" color="#FFFFFF" size="{{20}}" />
+    <text>复制企业微信号</text>
+  </button>
+</view>

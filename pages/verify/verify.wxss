@@ -1,0 +1,28 @@
+.verify-result {
+  margin: 24px 12px 0;
+  padding: 20px;
+  border: 1px solid #D6C1A8;
+  border-radius: 16px;
+  background:
+    repeating-linear-gradient(24deg, transparent 0 36px, rgba(93,58,26,0.035) 36px 37px),
+    linear-gradient(180deg, #FFF8EE, #F2E4D1);
+  text-align: center;
+}
+
+.check-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.verify-title {
+  margin-top: 10px;
+  color: #4E321D;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.verify-sub {
+  margin-top: 8px;
+  color: #7A6756;
+  font-size: 13px;
+}

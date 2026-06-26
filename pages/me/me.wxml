@@ -1,0 +1,81 @@
+<view class="page">
+  <view class="custom-nav">
+    <view class="nav-inner">
+      <text>我的</text>
+    </view>
+  </view>
+
+  <view class="profile-header">
+    <view class="profile-main">
+      <view class="avatar">B</view>
+      <view class="profile-info">
+        <view class="name">{{isMember ? 'Brounvanm 会员' : 'Brounvanm 访客'}}</view>
+        <view class="level-badge">{{isMember ? '普通会员 · 已加入会员' : '非会员 · 点击下方加入'}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="member-welcome">
+    <view class="welcome-header">
+      <view class="welcome-icon"><brand-icon name="sparkle" color="#FFF8EE" size="{{24}}" /></view>
+      <view class="welcome-text">
+        <view class="welcome-title">{{isMember ? 'Brounvanm 会员欢迎你' : '加入 Brounvanm 会员'}}</view>
+        <view class="welcome-sub">{{isMember ? '已解锁专属品牌服务' : '使用假数据模拟加入会员流程'}}</view>
+      </view>
+      <view class="welcome-tag" bindtap="joinMember">{{isMember ? '已加入' : '加入会员'}}</view>
+    </view>
+    <view class="welcome-benefits">
+      <view><brand-icon name="book" color="#5D3A1A" size="{{22}}" /><text>保养指南</text></view>
+      <view><brand-icon name="bag" color="#5D3A1A" size="{{22}}" /><text>步履之礼</text></view>
+      <view><brand-icon name="wrench" color="#5D3A1A" size="{{22}}" /><text>专属售后</text></view>
+    </view>
+  </view>
+
+  <view class="section-title">
+    <view class="section-title-main">会员等级</view>
+  </view>
+  <view class="tier-strip">
+    <view class="tier-item {{selectedTier == 'basic' ? 'current' : ''}}" bindtap="selectTier" data-tier="basic">
+      <view wx:if="{{selectedTier == 'basic'}}" class="corner">当前</view>
+      <brand-icon name="medal-bronze" color="#8B552E" size="{{28}}" />
+      <view class="tier-title">普通会员</view>
+      <view class="tier-cond">注册即得</view>
+      <view class="tier-tag">免费加入</view>
+    </view>
+    <view class="tier-item {{selectedTier == 'silver' ? 'current' : ''}}" bindtap="selectTier" data-tier="silver">
+      <view wx:if="{{selectedTier == 'silver'}}" class="corner">当前</view>
+      <brand-icon name="medal-silver" color="#A8A8A8" size="{{28}}" />
+      <view class="tier-title">老客会员</view>
+      <view class="tier-cond">购鞋 1 次</view>
+      <view class="tier-tag">已解锁</view>
+    </view>
+    <view class="tier-item {{selectedTier == 'gold' ? 'current' : ''}}" bindtap="selectTier" data-tier="gold">
+      <view wx:if="{{selectedTier == 'gold'}}" class="corner">当前</view>
+      <brand-icon name="medal-gold" color="#B98950" size="{{28}}" />
+      <view class="tier-title">核心会员</view>
+      <view class="tier-cond">累计购鞋 3 双以上</view>
+      <view class="tier-tag">升级中</view>
+    </view>
+  </view>
+
+  <view class="section-title">
+    <view class="section-title-main">会员权益</view>
+  </view>
+  <button class="list-item first" bindtap="goDetail" data-key="stepGift"><brand-icon class="list-icon" name="bag" color="#5D3A1A" size="{{24}}" /><view class="list-info"><view class="list-title">步履之礼</view></view><brand-icon name="chevron-right" color="#C8B89A" size="{{18}}" /></button>
+  <button class="list-item" bindtap="goDetail" data-key="newPriority"><brand-icon class="list-icon" name="bell" color="#5D3A1A" size="{{24}}" /><view class="list-info"><view class="list-title">新品优先</view></view><brand-icon name="chevron-right" color="#C8B89A" size="{{18}}" /></button>
+  <button class="list-item" bindtap="goDetail" data-key="careReminder"><brand-icon class="list-icon" name="calendar" color="#5D3A1A" size="{{24}}" /><view class="list-info"><view class="list-title">保养提醒</view></view><brand-icon name="chevron-right" color="#C8B89A" size="{{18}}" /></button>
+  <button class="list-item" bindtap="goQr"><brand-icon class="list-icon" name="chat" color="#5D3A1A" size="{{24}}" /><view class="list-info"><view class="list-title">专属客服</view></view><brand-icon name="chevron-right" color="#C8B89A" size="{{18}}" /></button>
+  <button class="list-item last" bindtap="goDetail" data-key="referral"><brand-icon class="list-icon" name="gift" color="#5D3A1A" size="{{24}}" /><view class="list-info"><view class="list-title">推荐有礼</view></view><brand-icon name="chevron-right" color="#C8B89A" size="{{18}}" /></button>
+
+  <view class="section-title">
+    <view class="section-title-main">我的服务</view>
+  </view>
+  <button class="list-item first" bindtap="goQr"><brand-icon class="list-icon" name="chat" color="#5D3A1A" size="{{24}}" /><view class="list-info"><view class="list-title">我的专属顾问</view><view class="list-sub">企业微信已添加</view></view><brand-icon name="chevron-right" color="#C8B89A" size="{{18}}" /></button>
+  <button class="list-item" bindtap="goDetail" data-key="verifyRecord"><brand-icon class="list-icon" name="shield" color="#5D3A1A" size="{{24}}" /><view class="list-info"><view class="list-title">验证记录</view><view class="list-sub">查看正品验证历史</view></view><brand-icon name="chevron-right" color="#C8B89A" size="{{18}}" /></button>
+  <button class="list-item last" bindtap="shopToast"><brand-icon class="list-icon" name="bag" color="#5D3A1A" size="{{24}}" /><view class="list-info"><view class="list-title shop-title">微信小店</view><view class="list-sub">精选商品 · 随心选购</view></view><brand-icon name="chevron-right" color="#C8B89A" size="{{18}}" /></button>
+
+  <view class="section-title">
+    <view class="section-title-main">设置</view>
+  </view>
+  <button class="list-item single" bindtap="goDetail" data-key="profile"><brand-icon class="list-icon" name="user" color="#5D3A1A" size="{{24}}" /><view class="list-info"><view class="list-title">个人资料</view></view><brand-icon name="chevron-right" color="#C8B89A" size="{{18}}" /></button>
+</view>

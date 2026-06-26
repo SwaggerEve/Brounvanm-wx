@@ -1,0 +1,48 @@
+<view class="page">
+  <view class="custom-nav">
+    <view class="nav-inner">
+      <button class="nav-back" bindtap="backHome"><brand-icon name="chevron-left" color="#5D3A1A" size="{{24}}" /></button>
+      <text>会员等级</text>
+    </view>
+  </view>
+
+  <view class="section-title">
+    <view class="section-title-main">会员等级成长</view>
+  </view>
+  <view class="banner-tip">
+    <brand-icon name="star" color="#8B6914" size="{{20}}" />
+    <text>会员等级基于你的品牌互动升级，而非消费金额。每一次互动都是品牌关系的加深。</text>
+  </view>
+
+  <view class="tier-card bronze">
+    <view class="tier-bar"></view><view class="tier-badge">B</view>
+    <view class="tier-info"><view class="tier-name">Bronze · 注册会员</view><view class="tier-cond">NFC 验真 + 注册即享</view></view>
+    <view class="tier-level">Lv.1</view>
+  </view>
+  <view class="tier-card silver">
+    <view class="tier-bar"></view><view class="tier-badge">S</view>
+    <view class="tier-info"><view class="tier-name">Silver · 购鞋会员</view><view class="tier-cond">添加企微 + 完成购鞋登记</view></view>
+    <view class="tier-level">Lv.2</view>
+  </view>
+  <view class="tier-card gold">
+    <view class="tier-bar"></view><view class="tier-badge">G</view>
+    <view class="tier-info"><view class="tier-name">Gold · 品鉴会员</view><view class="tier-cond">参与保养咨询 + 售后服务</view></view>
+    <view class="tier-level">Lv.3</view>
+  </view>
+  <view class="tier-card black">
+    <view class="tier-bar"></view><view class="tier-badge">BK</view>
+    <view class="tier-info"><view class="tier-name">Black · 品牌挚友</view><view class="tier-cond">多次选购 + 推荐好友</view></view>
+    <view class="tier-level">VIP</view>
+  </view>
+
+  <view class="divider"></view>
+
+  <view class="section-title">
+    <view class="section-title-main">等级权益对比</view>
+  </view>
+  <view class="list-item first"><view class="list-info"><view class="list-title">专属顾问 1对1</view></view><view class="list-value">Bronze 起</view></view>
+  <view class="list-item"><view class="list-info"><view class="list-title">新品优先体验</view></view><view class="list-value">Silver 起</view></view>
+  <view class="list-item"><view class="list-info"><view class="list-title">免费保养次数</view></view><view class="list-value">Gold 起</view></view>
+  <view class="list-item"><view class="list-info"><view class="list-title">限量款优先购买</view></view><view class="list-value">Gold 起</view></view>
+  <view class="list-item last"><view class="list-info"><view class="list-title">品牌活动邀请</view></view><view class="list-value">Black 专享</view></view>
+</view>

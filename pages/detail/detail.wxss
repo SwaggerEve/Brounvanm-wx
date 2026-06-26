@@ -1,0 +1,27 @@
+.detail-card {
+  margin: 12px;
+  padding: 20px 16px;
+  border-radius: 16px;
+  border: 1px solid #E6D9C8;
+  background: #FFFDF9;
+}
+
+.detail-title {
+  color: #2E2A26;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.detail-sub {
+  margin-top: 6px;
+  color: #8B552E;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.detail-desc {
+  margin-top: 12px;
+  color: #5F5750;
+  font-size: 13px;
+  line-height: 1.8;
+}

@@ -1,0 +1,77 @@
+<view class="page">
+  <view class="custom-nav">
+    <view class="nav-inner">
+      <text>Brounvanm</text>
+    </view>
+  </view>
+
+  <view class="hero-card">
+    <view class="hero-content">
+      <view class="hero-title">Brounvanm</view>
+      <view class="brand-cn">步朗梵牧</view>
+      <view class="hero-desc">
+        <view>每一步的考究，从验真开始。</view>
+        <view>这不仅是一双鞋，更是你选择的品味。</view>
+      </view>
+      <button class="btn-gold" bindtap="goVerify">
+        <brand-icon name="nfc" color="#FFF8EE" size="{{18}}" />
+        <text>NFC 验真</text>
+      </button>
+    </view>
+  </view>
+
+  <view class="section-title home-section-title">
+    <view class="section-title-main">会员专属服务</view>
+    <button class="section-more" bindtap="goServices">全部 <brand-icon name="chevron-right" color="#8A7D70" size="{{14}}" /></button>
+  </view>
+  <scroll-view class="card-row service-row" scroll-x enhanced show-scrollbar="{{false}}">
+    <button class="service-card" bindtap="goServices">
+      <brand-icon name="shield" color="#5D3A1A" size="{{24}}" />
+      <view class="title">正品验证</view>
+      <view class="sub">NFC 一触即知</view>
+    </button>
+    <button class="service-card" bindtap="goQr">
+      <brand-icon name="chat" color="#5D3A1A" size="{{24}}" />
+      <view class="title">专属客服</view>
+      <view class="sub">1对1服务</view>
+    </button>
+    <button class="service-card" bindtap="goDetail" data-key="careGuide">
+      <brand-icon name="shoe" color="#5D3A1A" size="{{24}}" />
+      <view class="title">保养指南</view>
+      <view class="sub">专业养护</view>
+    </button>
+    <button class="service-card" bindtap="goTiers">
+      <brand-icon name="star" color="#5D3A1A" size="{{24}}" />
+      <view class="title">会员等级</view>
+      <view class="sub">权益升级</view>
+    </button>
+  </scroll-view>
+
+  <view class="section-title home-section-title">
+    <view class="section-title-main">新品品鉴</view>
+    <button class="section-more" bindtap="shopToast">查看详情 <brand-icon name="chevron-right" color="#8A7D70" size="{{14}}" /></button>
+  </view>
+  <view class="card-row product-row">
+    <view class="content-card" bindtap="goDetail" data-key="oxford">
+      <view class="content-cover cover-one"><brand-icon name="shoe" color="#8B552E" size="{{48}}" /></view>
+      <view class="content-body">
+        <view class="content-tag">新季品鉴</view>
+        <view class="content-title">Classic Oxford 经典牛津鞋</view>
+        <view class="content-meta">2026 夏季新品</view>
+      </view>
+    </view>
+    <view class="content-card" bindtap="goDetail" data-key="loafer">
+      <view class="content-cover cover-two"><brand-icon name="shoe" color="#8B552E" size="{{48}}" /></view>
+      <view class="content-body">
+        <view class="content-tag">限量品鉴</view>
+        <view class="content-title">Loafer 乐福鞋 · 限量版</view>
+        <view class="content-meta">新品品鉴</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="story-card">
+    <view class="story-quote">Brounvanm，认真做日常真皮男鞋，让体面和舒服多一点。</view>
+    <view class="story-author">— 品牌理念 · Brounvanm</view>
+  </view>
+</view>

@@ -1,0 +1,42 @@
+<view class="page">
+  <view class="custom-nav">
+    <view class="nav-inner">
+      <text>会员服务</text>
+    </view>
+  </view>
+
+  <view class="section-title">
+    <view class="section-title-main">会员权益中心</view>
+  </view>
+  <view class="benefit-grid">
+    <view class="benefit-item" bindtap="goDetail" data-key="verifyRecord"><brand-icon name="shield" color="#5D3A1A" size="{{26}}" /><view class="title">正品验证</view><view class="sub">NFC 一触即知</view></view>
+    <view class="benefit-item" bindtap="goDetail" data-key="wechat"><brand-icon name="chat" color="#5D3A1A" size="{{26}}" /><view class="title">专属客服</view><view class="sub">1对1顾问服务</view></view>
+    <view class="benefit-item" bindtap="goDetail" data-key="careGuide"><brand-icon name="book" color="#5D3A1A" size="{{26}}" /><view class="title">保养指南</view><view class="sub">专业养护知识</view></view>
+    <view class="benefit-item" bindtap="goDetail" data-key="afterSale"><brand-icon name="wrench" color="#5D3A1A" size="{{26}}" /><view class="title">售后咨询</view><view class="sub">无忧售后服务</view></view>
+    <view class="benefit-item" bindtap="goDetail" data-key="newPriority"><brand-icon name="bell" color="#5D3A1A" size="{{26}}" /><view class="title">新品优先通知</view><view class="sub">提前获取资讯</view></view>
+    <view class="benefit-item" bindtap="goDetail" data-key="stepGift"><brand-icon name="gift" color="#5D3A1A" size="{{26}}" /><view class="title">老客专属福利</view><view class="sub">会员独享优惠</view></view>
+    <view class="benefit-item" bindtap="goDetail" data-key="careReminder"><brand-icon name="calendar" color="#5D3A1A" size="{{26}}" /><view class="title">会员活动提醒</view><view class="sub">活动不再错过</view></view>
+    <view class="benefit-item" bindtap="goDetail" data-key="shoeCabinet"><brand-icon name="shoe" color="#5D3A1A" size="{{26}}" /><view class="title">老客品鉴官</view><view class="sub">邀请制深度参与</view></view>
+  </view>
+
+  <view class="divider"></view>
+
+  <view class="section-title">
+    <view class="section-title-main">常见问题</view>
+  </view>
+  <button class="list-item single" bindtap="goDetail" data-key="nfcGuide">
+    <brand-icon class="list-icon" name="nfc" color="#5D3A1A" size="{{24}}" />
+    <view class="list-info"><view class="list-title">如何使用 NFC 验真？</view><view class="list-sub">详细操作步骤说明</view></view>
+    <brand-icon name="chevron-right" color="#C8B89A" size="{{18}}" />
+  </button>
+  <button class="list-item single" bindtap="goDetail" data-key="careGuide">
+    <brand-icon class="list-icon" name="shoe" color="#5D3A1A" size="{{24}}" />
+    <view class="list-info"><view class="list-title">皮鞋日常保养指南</view><view class="list-sub">5步延长爱鞋寿命</view></view>
+    <brand-icon name="chevron-right" color="#C8B89A" size="{{18}}" />
+  </button>
+  <button class="list-item single" bindtap="goDetail" data-key="afterSale">
+    <brand-icon class="list-icon" name="wrench" color="#5D3A1A" size="{{24}}" />
+    <view class="list-info"><view class="list-title">售后与维修政策</view><view class="list-sub">服务范围与流程</view></view>
+    <brand-icon name="chevron-right" color="#C8B89A" size="{{18}}" />
+  </button>
+</view>

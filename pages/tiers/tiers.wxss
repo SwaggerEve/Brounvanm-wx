@@ -1,0 +1,76 @@
+.tier-card {
+  position: relative;
+  margin: 8px 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #E6D9C8;
+  background: #FFFDF9;
+}
+
+.tier-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #A96532;
+}
+
+.tier-badge {
+  width: 44px;
+  height: 44px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #A96532, #6B4325);
+  color: #FFF8EE;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.tier-info {
+  flex: 1;
+}
+
+.tier-name {
+  color: #2E2A26;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.tier-cond {
+  margin-top: 5px;
+  color: #8A7D70;
+  font-size: 12px;
+}
+
+.tier-level {
+  color: #8B552E;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.silver .tier-bar {
+  background: #8C867F;
+}
+
+.silver .tier-badge {
+  background: linear-gradient(135deg, #D4CBC0, #8C867F);
+}
+
+.gold .tier-badge {
+  background: linear-gradient(135deg, #B98950, #8B552E);
+}
+
+.black .tier-bar {
+  background: #5D3A1A;
+}
+
+.black .tier-badge {
+  background: linear-gradient(135deg, #5D3A1A, #2B1709);
+}

@@ -1,0 +1,40 @@
+<view class="page">
+  <view class="custom-nav">
+    <view class="nav-inner">
+      <button class="nav-back" bindtap="backHome"><brand-icon name="chevron-left" color="#5D3A1A" size="{{24}}" /></button>
+      <text>正品验证</text>
+    </view>
+  </view>
+
+  <view class="verify-result">
+    <view class="check-wrap"><brand-icon name="check" color="#6B4325" size="{{48}}" /></view>
+    <view class="verify-title">你的 Brounvanm 已验证为正品</view>
+    <view class="verify-sub">NFC 芯片验证通过 · 官方正品保障</view>
+  </view>
+
+  <view class="qr-card">
+    <view class="qr-step">下一步</view>
+    <view class="qr-placeholder"><brand-icon name="chat" color="#8B552E" size="{{32}}" /></view>
+    <view class="qr-title">添加 Brounvanm 专属顾问</view>
+    <view class="desc">
+      <view>长按识别二维码，添加企业微信好友</view>
+      <view>解锁专属品牌服务与会员权益</view>
+    </view>
+    <view class="tips">添加后获得：1对1专属顾问 · 保养咨询 · 新品优先通知 · 会员专属福利</view>
+  </view>
+
+  <button class="btn-primary" bindtap="copyWechat">
+    <brand-icon name="copy" color="#FFF8EE" size="{{20}}" />
+    <text>复制企业微信号</text>
+  </button>
+
+  <view class="section-title">
+    <view class="section-title-main">还可以做什么</view>
+  </view>
+  <view class="benefit-grid">
+    <button class="benefit-item" bindtap="goTiers"><brand-icon name="star" color="#5D3A1A" size="{{26}}" /><view class="title">会员权益</view><view class="sub">查看等级与福利</view></button>
+    <button class="benefit-item" bindtap="goServices"><brand-icon name="book" color="#5D3A1A" size="{{26}}" /><view class="title">保养指南</view><view class="sub">延长爱鞋寿命</view></button>
+    <button class="benefit-item" bindtap="wechatToast"><brand-icon name="wechat" color="#5D3A1A" size="{{26}}" /><view class="title">关注公众号</view><view class="sub">获取品牌动态</view></button>
+    <button class="benefit-item" bindtap="videoToast"><brand-icon name="video" color="#5D3A1A" size="{{26}}" /><view class="title">关注视频号</view><view class="sub">穿搭灵感</view></button>
+  </view>
+</view>

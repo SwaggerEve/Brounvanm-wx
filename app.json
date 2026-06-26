@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/verify/verify",
+    "pages/qr/qr",
+    "pages/detail/detail",
+    "pages/favorite/favorite",
+    "pages/nfc-guide/nfc-guide",
+    "pages/care-guide/care-guide",
+    "pages/after-sale/after-sale",
+    "pages/step-gift/step-gift",
+    "pages/new-priority/new-priority",
+    "pages/care-reminder/care-reminder",
+    "pages/shoe-cabinet/shoe-cabinet",
+    "pages/referral/referral",
+    "pages/verify-record/verify-record",
+    "pages/profile/profile",
+    "pages/oxford/oxford",
+    "pages/loafer/loafer",
+    "pages/formal-outfit/formal-outfit",
+    "pages/casual-outfit/casual-outfit",
+    "pages/services/services",
+    "pages/tiers/tiers",
+    "pages/brand/brand",
+    "pages/me/me"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundColor": "#F3EDE3",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#8A7D70",
+    "selectedColor": "#5D3A1A",
+    "backgroundColor": "#FFFDF9",
+    "borderStyle": "white",
+    "list": [
+      { "pagePath": "pages/home/home", "text": "首页" },
+      { "pagePath": "pages/services/services", "text": "服务" },
+      { "pagePath": "pages/brand/brand", "text": "品牌" },
+      { "pagePath": "pages/me/me", "text": "我的" }
+    ]
+  },
+  "usingComponents": {
+    "brand-icon": "/components/icon/icon"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

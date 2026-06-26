@@ -1,0 +1,120 @@
+.hero-card {
+  position: relative;
+  margin: 12px;
+  padding: 24px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 20px;
+  background:
+    repeating-linear-gradient(22deg, transparent 0 34px, rgba(244,229,207,0.035) 34px 35px),
+    repeating-linear-gradient(-12deg, transparent 0 70px, rgba(35,22,13,0.18) 70px 71px),
+    linear-gradient(135deg, #2A170B 0%, #3B2413 36%, #5D3A1A 72%, #6F4724 100%);
+}
+
+.hero-card::before {
+  content: "";
+  position: absolute;
+  right: -70px;
+  bottom: -50px;
+  z-index: 0;
+  width: 280px;
+  height: 200px;
+  border-radius: 50% 50% 35% 35%;
+  background: radial-gradient(ellipse at 55% 40%, rgba(149,95,48,0.24), rgba(149,95,48,0.07) 60%, transparent);
+}
+
+.hero-card::after {
+  content: "";
+  position: absolute;
+  left: -45px;
+  bottom: -35px;
+  z-index: 0;
+  width: 220px;
+  height: 150px;
+  border-radius: 50% 50% 45% 45%;
+  background: radial-gradient(ellipse at 40% 45%, rgba(169,101,50,0.18), rgba(169,101,50,0.04) 55%, transparent);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title {
+  color: #FFFFFF;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.brand-cn {
+  margin-bottom: 10px;
+  color: rgba(250,241,228,0.58);
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+.hero-desc {
+  color: rgba(250,241,228,0.7);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.btn-gold {
+  margin-top: 18px;
+  padding: 10px 24px;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+  background: #8B552E;
+  box-shadow: 0 5px 14px rgba(30,18,10,0.24);
+  color: #FFF8EE;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-gold text {
+  margin-left: 6px;
+}
+
+.home-section-title {
+  padding-right: 12px;
+}
+
+.home-section-title .section-more {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.service-row {
+  padding: 0 12px;
+}
+
+.service-row .service-card {
+  width: 96px;
+  padding: 12px 10px;
+  margin-right: 8px;
+  border-radius: 10px;
+}
+
+.product-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  overflow: hidden;
+  white-space: normal;
+}
+
+.product-row .content-card {
+  margin-right: 0;
+}
+
+.cover-two {
+  background:
+    repeating-linear-gradient(-18deg, transparent 0 32px, rgba(93, 58, 26, 0.04) 32px 33px),
+    linear-gradient(135deg, #DED0BC, #CDB79E);
+}
