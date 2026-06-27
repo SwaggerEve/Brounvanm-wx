@@ -1,7 +1,12 @@
-const { navDetail } = require("../../utils/nav");
+const { navTo, navDetail } = require("../../utils/nav");
 
 Page({
   goDetail(event) {
-    navDetail(event.currentTarget.dataset.key);
+    const key = event.currentTarget.dataset.key;
+    if (key === "wechat") {
+      navTo("qr");
+      return;
+    }
+    navDetail(key);
   }
 });

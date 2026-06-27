@@ -51,14 +51,36 @@
 .inspiration-row {
   display: flex;
   justify-content: space-between;
-  height: 220px;
+  height: 244px;
   overflow: hidden;
   padding: 0 16px;
   white-space: normal;
+  align-items: stretch;
 }
 
 .inspiration-row .content-card {
   margin-right: 0;
+  height: 244px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inspiration-row .content-cover {
+  height: 118px;
+  flex: 0 0 118px;
+}
+
+.inspiration-row .content-body {
+  flex: 1;
+  padding: 9px 11px 10px;
+}
+
+.inspiration-row .content-title {
+  line-height: 1.45;
+}
+
+.inspiration-row .content-meta {
+  line-height: 1.4;
 }
 
 .benefit-row .benefit-item {

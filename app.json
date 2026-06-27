@@ -26,7 +26,9 @@
   ],
   "subPackages": [],
   "window": {
-    "navigationStyle": "custom",
+    "navigationStyle": "default",
+    "navigationBarBackgroundColor": "#F3EDE3",
+    "navigationBarTextStyle": "black",
     "backgroundColor": "#F3EDE3",
     "backgroundTextStyle": "dark"
   },
@@ -43,7 +45,8 @@
     ]
   },
   "usingComponents": {
-    "brand-icon": "/components/icon/icon"
+    "brand-icon": "/components/icon/icon",
+    "detail-content": "/components/detail-content/detail-content"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

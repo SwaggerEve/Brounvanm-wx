@@ -1,18 +1,13 @@
-const { navTo, navDetail } = require("../../utils/nav");
+const { navTo, navDetail, openExternal } = require("../../utils/nav");
+const { initialMemberState, joinedMemberState } = require("../../data/memberData");
 
 Page({
-  data: {
-    isMember: false,
-    selectedTier: ""
-  },
+  data: initialMemberState,
   joinMember() {
     if (this.data.isMember) {
       return;
     }
-    this.setData({
-      isMember: true,
-      selectedTier: "basic"
-    });
+    this.setData(joinedMemberState);
     wx.showToast({
       title: "已模拟加入会员",
       icon: "none",
@@ -31,6 +26,6 @@ Page({
     navDetail(event.currentTarget.dataset.key);
   },
   shopToast() {
-    navDetail("shop");
+    openExternal("shop");
   }
 });

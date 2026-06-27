@@ -1,1 +1,3 @@
-<view class="page"><view class="custom-nav"><view class="nav-inner"><button class="nav-back" bindtap="backHome"><brand-icon name="chevron-left" color="#5D3A1A" size="{{24}}" /></button><text>{{detail.title}}</text></view></view><view class="detail-card"><view class="detail-title">{{detail.title}}</view><view class="detail-sub">{{detail.subtitle}}</view><view class="detail-desc">{{detail.desc}}</view></view><view class="section-title"><view class="section-title-main">{{detail.sectionTitle}}</view></view><view wx:for="{{detail.items}}" wx:key="*this" class="list-item single"><brand-icon class="list-icon" name="check" color="#5D3A1A" size="{{20}}" /><view class="list-info"><view class="list-title">{{item}}</view></view></view></view>
+<view class="page">
+  <detail-content detail="{{detail}}" action-key="shoeCabinet" />
+</view>
